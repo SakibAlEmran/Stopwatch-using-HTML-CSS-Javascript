@@ -1,0 +1,99 @@
+body{
+    display: flex table-column;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 95%;
+   
+}
+
+.dot {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(197, 170, 170);
+    border-radius: 100%;
+    display: inline-block;
+}
+.stopwatch{
+    background-color: rgb(23, 59, 29);
+    font-size: 35px;
+    color: white;
+    margin-top: 130px;
+    
+    
+}
+
+.controls{
+    margin-top: 25px;
+    
+}
+
+.button{
+    border-radius: 10px;
+    border-color: rgb(51, 122, 180);
+    width: 100px;
+    height: 40px;
+    margin: 0px 3px 0px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(102, 0, 0);
+    color: white;
+   
+
+}
+
+.laps{
+    
+    background-color: rgb(102, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .controls{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .button{
+        margin: 3px;
+        width: 120px;
+    }
+
+    .dot{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .stopwatch{
+        font-size: 25px;
+        margin-top: 90px;
+    }
+    
+    .laps{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .laps{
+        width: 50%;
+    }
+
+    .button{
+        width: 75px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
